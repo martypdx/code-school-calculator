@@ -24,6 +24,7 @@
     "gobble-ractive": "^0.2.0",
     "gobble-ractive-components": "^1.0.1",
     "gobble-rollup": "^0.34.0",
+    "gobble-sass": "^0.5.0",
     "gobble-sass-file": "^1.0.0",
     "mocha": "^3.0.2",
     "node-sass": "^3.8.0",
