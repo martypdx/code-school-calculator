@@ -29,7 +29,8 @@
     "beforeEach": false,
     "afterEach": false,
     "before": false,
-    "after": false
+    "after": false,
+    "component": false
   },
   "parserOptions": {
     "ecmaVersion": 6,

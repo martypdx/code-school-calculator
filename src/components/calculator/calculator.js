@@ -13,7 +13,8 @@ component.exports = {
     },
     computed: {
         totalDuration() {
-            const durations = this.get( 'durations' )
+            const d = this.get( 'durations' );
+            return d.current + d.school + d.search + d.outlook;
         }
     }
 };
