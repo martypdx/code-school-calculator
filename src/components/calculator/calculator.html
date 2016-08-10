@@ -1,8 +1,13 @@
 <section>
-  <div class="calculator" style="width: {{totalDuration * month}}vw;">
-      <current-salary duration="{{durations.current}}"></current-salary>
-      <code-school duration="{{durations.school}}"></code-school>
-      <job-search duration="{{durations.search}}"></job-search>
-      <new-career duration="{{durations.outlook}}"></new-career>
-  </div>
+    <div class="controls">
+    <input type="range" min="1" max="10" value="{{month}}">
+    </div>
+    <div class="container">
+        <div class="graph" style="width: {{totalDuration * month}}vw;">
+            <current-salary duration="{{durations.current}}"></current-salary>
+            <code-school duration="{{durations.school}}"></code-school>
+            <job-search duration="{{durations.search}}"></job-search>
+            <new-career duration="{{durations.outlook}}"></new-career>
+        </div>
+    </div>
 </section>
