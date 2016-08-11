@@ -1,3 +1,15 @@
 <div>
-    <label for="current-salary">Current Salary: </label><input name="current-salary" placeholder="$" value="{{currentSalary}}">
+    {{#with currentSalary}}
+    <label>Current Salary:
+        <input placeholder="$" value="{{.amount}}">
+    </label>
+    <label>
+        <input type="radio" name="{{.period}}" value="m">
+        monthly
+    </label>
+    <label>
+        <input type="radio" name="{{.period}}" value="y">
+        annually
+    </label>
+    {{/with}}
 </div>

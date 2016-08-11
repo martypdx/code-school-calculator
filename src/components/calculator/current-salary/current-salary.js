@@ -2,8 +2,10 @@ component.exports = {
     computed: {
         barHeight() {
           const cs = +this.get('currentSalary');
-          let h = 100 - cs/1000;
-          return h < 100 && h >= 0 ? h : 100;
+          let h = cs*.012;
+          h = Math.max( h, 0 );
+          h = Math.min( h, 90 );
+          return h;
         }
     }
 };

@@ -8,7 +8,10 @@ component.exports = {
                 search: 3,
                 outlook: 60
             },
-            currentSalary: 30000
+            currentSalary: {
+                amount: 30000,
+                period: 'y'
+            }
 
         }
     },
@@ -16,6 +19,11 @@ component.exports = {
         totalDuration() {
             const d = this.get( 'durations' );
             return d.current + d.school + d.search + d.outlook;
+        },
+        monthlyCurrentSalary() {
+            const salary = this.get( 'currentSalary' );
+            const amount = salary.period === 'm' ? +salary.amount : salary.amount/12;
+            return Math.round(amount);
         }
     }
 };

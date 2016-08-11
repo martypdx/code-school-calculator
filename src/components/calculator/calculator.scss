@@ -3,6 +3,7 @@
     padding: 10px;
     margin-bottom: 10px;
 }
+
 .container {
   height: 80vh;
   width: 100%;
@@ -15,6 +16,7 @@
           float: left;
           box-sizing: border-box;
           height: 100%;
+          transition: width 100ms ease-in-out;
       }
   }
 
