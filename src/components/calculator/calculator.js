@@ -7,7 +7,8 @@ component.exports = {
                 school: 4,
                 search: 3,
                 outlook: 60
-            }
+            },
+            currentSalary: 30000
 
         }
     },
