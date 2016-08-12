@@ -1,12 +1,12 @@
 <section>
     <user-form></user-form>
     <div class="controls">
-    <input type="range" min="1" max="10" value="{{month}}">
+        <input type="range" min="1" max="10" value="{{month}}">
     </div>
     <div class="container">
         <div class="graph" style="width: {{totalDuration * month}}vw;">
             <current-salary duration="{{durations.current}}" currentSalary="{{monthlyCurrentSalary}}"></current-salary>
-            <code-school duration="{{durations.school}}"></code-school>
+            <code-school duration="{{durations.school}}" cost="{{+schoolCost}}" currentSalary="{{monthlyCurrentSalary}}"></code-school>
             <job-search duration="{{durations.search}}"></job-search>
             <new-career duration="{{durations.outlook}}"></new-career>
         </div>

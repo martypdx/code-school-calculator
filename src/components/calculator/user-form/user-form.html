@@ -1,15 +1,30 @@
 <div>
-    {{#with currentSalary}}
-    <label>Current Salary:
-        <input placeholder="$" value="{{.amount}}">
-    </label>
-    <label>
-        <input type="radio" name="{{.period}}" value="m">
-        monthly
-    </label>
-    <label>
-        <input type="radio" name="{{.period}}" value="y">
-        annually
-    </label>
-    {{/with}}
+    <fieldset>
+        <legend>Current Salary</legend>
+        {{#with currentSalary}}
+            <label>
+                <input placeholder="$" value="{{.amount}}">
+            </label>
+            <label>
+                <input type="radio" name="{{.period}}" value="m">
+                monthly
+            </label>
+            <label>
+                <input type="radio" name="{{.period}}" value="y">
+                annually
+            </label>
+        {{/with}}
+    </fieldset>
+
+    <fieldset>
+        <legend>Code School</legend>
+        <label>
+            Duration (months):
+            <input placeholder="months" type="number" min="1" value="{{durations.school}}">
+        </label>
+        <label>
+            Cost:
+            <input placeholder="costs" value="{{schoolCost}}">
+        </label>
+    </fieldset>
 </div>

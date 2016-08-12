@@ -11,7 +11,8 @@ component.exports = {
             currentSalary: {
                 amount: 30000,
                 period: 'y'
-            }
+            },
+            schoolCost: 20000
 
         }
     },

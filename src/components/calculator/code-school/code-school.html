@@ -1,3 +1,12 @@
 <section style="width: {{month * duration}}vw;">
-    code school
+    ${{cost}} over {{duration}} months
+    {{#each Array(duration):i}}
+    <div class="net" style="
+        top: {{50 + netTop(i)}}%;
+        width: {{month}}vw; 
+        left: {{i*month}}vw;
+        height: {{netHeight(i)}}%;
+    ">-${{console.log(i, net(i))}}</div>
+    {{/each}}
+    <div class="bar" style="height: {{salaryHeight}}%; "></div>
 </section>
